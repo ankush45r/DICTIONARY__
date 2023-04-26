@@ -91,7 +91,7 @@ app.get('/login',async (req,res)=>{
     res.render('login.ejs');
 })
 
-app.post('/dictionary', async (req,res)=>{
+app.post('/login', async (req,res)=>{
     try{
         phone = req.body.phone;
         password = req.body.password;
@@ -118,7 +118,7 @@ app.post('/dictionary', async (req,res)=>{
 })
 
 
-app.post('/signup_', async (req,res)=>{
+app.post('/signup', async (req,res)=>{
     try{
         const signupData = {
             name: req.body.name,
